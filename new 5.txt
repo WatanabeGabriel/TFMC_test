@@ -1,0 +1,77 @@
+gwatanabe1@WLPE08TMCT MINGW64 ~
+$ git clone https://github.com/WatanabeGabriel/TFMC_test
+Cloning into 'TFMC_test'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+gwatanabe1@WLPE08TMCT MINGW64 ~
+$ pwd
+/c/Users/gwatanabe1
+
+gwatanabe1@WLPE08TMCT MINGW64 ~
+$ cd TFMC_test/
+
+gwatanabe1@WLPE08TMCT MINGW64 ~/TFMC_test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+gwatanabe1@WLPE08TMCT MINGW64 ~/TFMC_test (main)
+$ ssh-keygen -t ed25519 -C "gwatanabe.eng@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/gwatanabe1/.ssh/id_ed25519):
+Created directory '/c/Users/gwatanabe1/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/gwatanabe1/.ssh/id_ed25519
+Your public key has been saved in /c/Users/gwatanabe1/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:pDa3skETOqEojQhD34cQ1VT0XaPy7InFUNqA1Jca6Vg gwatanabe.eng@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+| . oo.o.++o....o |
+|. . o .. ..E*oo .|
+|o  ..o... +=++   |
+|o= . o.+ . o*    |
+|= o o * S    =   |
+|.    + + .  + .  |
+|      o .  . o   |
+|       +         |
+|      .          |
++----[SHA256]-----+
+
+gwatanabe1@WLPE08TMCT MINGW64 ~/TFMC_test (main)
+$
+
+gwatanabe1@WLPE08TMCT MINGW64 ~/TFMC_test (main)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enter passphrase for key '/c/Users/gwatanabe1/.ssh/id_ed25519':
+Hi WatanabeGabriel! You've successfully authenticated, but GitHub does not provide shell access.
+
+gwatanabe1@WLPE08TMCT MINGW64 ~/TFMC_test (main)
+$ git pull
+Enter passphrase for key '/c/Users/gwatanabe1/.ssh/id_ed25519':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 2 (delta 0), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 237 bytes | 4.00 KiB/s, done.
+From github.com:WatanabeGabriel/TFMC_test
+   a844a9a..6be9d4f  main       -> origin/main
+Updating a844a9a..6be9d4f
+Fast-forward
+ README => README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename README => README.md (100%)
+
+
